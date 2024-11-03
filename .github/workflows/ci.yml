@@ -5,7 +5,7 @@ name: Continuous integration
 jobs:
   check:
     name: Check
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions-rs/toolchain@v1
@@ -19,7 +19,7 @@ jobs:
 
   test:
     name: Test Suite
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions-rs/toolchain@v1
@@ -33,7 +33,7 @@ jobs:
 
   fmt:
     name: Rustfmt
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions-rs/toolchain@v1
@@ -49,7 +49,7 @@ jobs:
 
   clippy:
     name: Clippy
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions-rs/toolchain@v1
