@@ -2,7 +2,7 @@
 
 https://doc.rust-lang.org/book/ch12-00-an-io-project.html
 
-1. Close repo
+1. Clone repo
    ```
    git clone https://github.com/mshandruk/minigrep.git
    ```
